@@ -4,3 +4,4 @@
 __pycache__/
 *.pyc
 backend/cache/
+Miniforge3-MacOSX-arm64.sh
