@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #e0e7ef;
+  font-family: 'Montserrat', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 16px #00eaff99, 0 1px 1px #0008;
+  color: #e0e7ef;
+}
+
+/* Futuristic card and section styles */
+.card, .section, .rounded-lg, .shadow-xl, .shadow-lg {
+  background: linear-gradient(135deg, #1e293b 60%, #334155 100%);
+  border: 1px solid #334155;
+  box-shadow: 0 4px 32px #00eaff22, 0 1.5px 1.5px #0006;
+  border-radius: 1rem;
+}
+
+/* Neon accent for buttons and highlights */
+.btn, button, .accent {
+  background: linear-gradient(90deg, #00eaff 0%, #3b82f6 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0 8px #00eaff99, 0 1.5px 1.5px #0006 !important;
+  font-family: 'Orbitron', 'Montserrat', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  padding: 0.5rem 2rem !important;
+  min-width: 120px;
+  max-width: 220px;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s !important;
+  font-size: 1.1rem !important;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn:hover, button:hover, .accent:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #00eaff 100%) !important;
+  box-shadow: 0 0 16px #00eaffcc, 0 2px 2px #0008 !important;
+  transform: scale(1.04) !important;
+}
+
+button[aria-label="Predict race outcome"] {
+  background: linear-gradient(90deg, #00eaff 0%, #3b82f6 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0 8px #00eaff99, 0 1.5px 1.5px #0006 !important;
+  font-family: 'Orbitron', 'Montserrat', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  padding: 0.5rem 2rem !important;
+  min-width: 120px;
+  max-width: 220px;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s !important;
+  font-size: 1.1rem !important;
+  cursor: pointer;
+  display: inline-block;
+}
+button[aria-label="Predict race outcome"]:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #00eaff 100%) !important;
+  box-shadow: 0 0 16px #00eaffcc, 0 2px 2px #0008 !important;
+  transform: scale(1.04) !important;
+}
+
+/* Table styles for dark mode */
+table {
+  background: #1e293b;
+  color: #e0e7ef;
+}
+thead {
+  background: #334155;
+  color: #00eaff;
+}
+tbody tr {
+  border-bottom: 1px solid #334155;
+}
+tbody tr:hover {
+  background: #33415588;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes neon-glow {
+  0%, 100% { text-shadow: 0 0 12px #00eaff, 0 2px 16px #00eaff99; }
+  50% { text-shadow: 0 0 32px #00eaffcc, 0 2px 32px #00eaff; }
+}
+.neon-animate {
+  animation: neon-glow 2s infinite alternate;
+}
+.glass {
+  background: rgba(30, 41, 59, 0.6) !important;
+  border: 1.5px solid #00eaff44 !important;
+  box-shadow: 0 8px 32px #00eaff22 !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-radius: 1.5rem !important;
+} 
